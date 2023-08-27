@@ -15,7 +15,7 @@
 
 read.all.sheets <- function(sheet, url, skip = 1){
 
-  df <- read_sheet(url, sheet = sheets, skip = skip)
+  df <- read_sheet(url, sheet = sheet, skip = skip)
 
   return(df)
 
@@ -27,10 +27,11 @@ read.all.sheets <- function(sheet, url, skip = 1){
 #' Reads data from a sheets in a google sheet
 #'
 #' @param url URL to the google workbook you want to read
+#' @param skip The number of lines to skip before reading data from google sheets
 #'
 #' @return An r object with the data
 #'
-#' @importFrom googlesheets4 gs4_deauth read_sheet
+#' @importFrom googlesheets4 gs4_deauth read_sheet sheet_names
 #' @importFrom plyr llply
 #'
 #' @export

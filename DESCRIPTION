@@ -1,20 +1,19 @@
 Package: resUtils
-Type: Package
 Title: Utility functions for creating resume and CV documents using R and HTML markdown
 Version: 0.1.0
 Authors@R: person("Nathan", "Barton", email = "nathan.p.barton@gmail.com",
-  role = c("aut", "cre"))Maintainer: Nathan Barton <nathan.p.barton@gmail.com>
+  role = c("aut", "cre"))
+Maintainer: Nathan Barton <nathan.p.barton@gmail.com>
 Description: A set of convenience functions for creating resume and CV documents using R and markdown.
     More information coming.
-License: `use_mit_license()`
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 LazyData: true
 Imports:
   plyr,
-  dplyr,
-  stringr,
   googlesheets4
 Suggests:
-  testthat
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+License: MIT + file LICENSE
